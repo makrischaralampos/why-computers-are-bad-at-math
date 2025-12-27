@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Computers Are Bad at Math</title>
+    <meta
+      name="description"
+      content="A tiny demo showing why 0.1 + 0.2 is not exactly 0.3 in programming."
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Why Computers Are Bad at Math (And Humans Aren't)</h1>
+      <p class="subtitle">Try <code>0.1</code> + <code>0.2</code> 👇</p>
+
+      <form id="addedForm" class="card" autocomplete="off">
+        <div class="field">
+          <label for="a">A</label>
+          <input id="a" name="a" type="text" inputmode="decimal" value="0.1" />
+        </div>
+
+        <div class="field">
+          <label for="b">B</label>
+          <input id="b" name="b" type="text" inputmode="decimal" value="0.2" />
+        </div>
+
+        <button type="submit">Add</button>
+      </form>
+
+      <section class="result" aria-live="polite">
+        <h2>Result</h2>
+        <p id="output" class="output">—</p>
+      </section>
+    </main>
+  </body>
+</html>
